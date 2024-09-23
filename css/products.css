@@ -1,0 +1,187 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:  #2874f0;;
+    padding: 10px 20px;
+}
+
+#txt1 {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+#subdiv {
+    display: flex;
+    gap: 20px;
+}
+
+#subdiv a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+#subdiv a:hover {
+    background-color:  #1e5bb8;
+    border-radius: 4px;
+}
+
+#search {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+
+
+.main {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+#images {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+#images img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+#images img:hover {
+    border-color: #2874f0; 
+}
+
+
+#container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+
+#container #image {
+    flex: 1;
+    text-align: center;
+}
+
+#container #image img {
+    width: 300px;
+    height: 400px;
+    object-fit: contain;
+    border: 1px solid #ddd;
+}
+
+
+#container1{
+    display: flex;
+    
+}
+
+
+#productDetails {
+    gap: 10px;
+    padding-left: 60px;
+
+   
+}
+
+
+
+#productDetails div {
+    margin-bottom: 10px;
+}
+
+#productDetails #brand {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#productDetails #title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #212121;
+}
+
+#productDetails #originalPrice {
+    font-size: 16px;
+    color: #878787;
+}
+
+#productDetails #price {
+    font-size: 24px;
+    color: #b12704; 
+    font-weight: bold;
+}
+
+#productDetails #offer {
+    font-size: 16px;
+    color: #388e3c;
+}
+
+#productDetails #rating {
+    font-size: 14px;
+    color: #ff9f00; 
+}
+
+
+#btns {
+    margin-top: 20px;
+}
+
+#btns button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#btns #buy {
+    background-color: #ff9f00;
+    color: white;
+}
+
+#btns #buy:hover {
+    background-color: #f68b1e;
+}
+
+#btns #add {
+    background-color: #2874f0;
+    color: white;
+}
+
+#btns #add:hover {
+    background-color: #1e5bb8;
+}
+
