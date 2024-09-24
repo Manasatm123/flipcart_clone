@@ -31,9 +31,12 @@ async function getDetails() {
              <div id="rating">Rating : ${data.rating}</div>
     <div id="btns">
         <button id="buy">Buy Now</button>
-     <button id="add" onclick="Addtocart()">Add to Cart</button>
+     <button id="add" onclick="handlecart()">${isInCart() ? "Go To Cart" : "Add to Cart"}</button>
+     
     </div>
+    
         </div>`
+
   
         
     
@@ -50,6 +53,19 @@ function calculateOriginalPrice(discountedPrice, offerPercentage) {
     return discountedPrice / (1 - (offerPercentage / 100));
 }
 
+function isInCart(){
+    return localStorage.getItem(data.id) !== null
+}
+
+function handlecart(){
+    if(isInCart()){
+        window.location.href = './cart.html'
+    }else{
+        Addtocart()
+    }
+}
+
+
 function Addtocart(){
     console.log(data);
     localStorage.setItem(data.id,JSON.stringify(data))
@@ -57,3 +73,13 @@ function Addtocart(){
 
     
 }
+
+function UpdateCartButton(){
+    const addButton = document.getElementById("add");
+    if (addButton){
+        addButton.innerText = isInCart() ? "Go To Cart" : "Add To Cart"
+    }
+}
+
+
+

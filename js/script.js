@@ -25,7 +25,7 @@ async function getproducts() {
                     <h4 class="price">Rs.${product.price}</h4>
                     <h5 class="offer">${product.discountPercentage}%off</h5>
                     <br>
-                    <button>Cart</button>
+                    <button>Place Order</button>
 
                 </div>
               </a>
@@ -68,7 +68,7 @@ document.getElementById("search").addEventListener("keyup", async (e) => {
                     <h4 class="price">Rs.${product.price}</h4>
                     <h5 class="offer">${product.discountPercentage}%off</h5>
                     <br>
-                    <button>Cart</button>
+                    <button>Place Order</button>
 
                 </div>
               </a>

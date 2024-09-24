@@ -70,12 +70,19 @@ body {
 
 #details div {
     margin-bottom: 10px;
-    font-size: 16px;
-    color: #333;
+    
+    
 }
 
-#prices {
-    font-size: 16px;
+
+#brand{
+    font-size: 20px;
+    font-weight: bold;
+    color: #1e5bb8;
+}
+
+#title {
+    font-size: 25px;
 }
 
 #originalPrice {
@@ -83,17 +90,20 @@ body {
 }
 
 #price {
-    color: #2874f0;
+    color:  #b12704;
     font-weight: bold;
 }
 
 #offer {
     color: #ff5722;
+    margin-top: 10px;
 }
 
 #btn {
-    margin-top: 10px;
-    padding: 10px 20px;
+    margin-top: 50px;
+   
+    width: 200px;
+    height: 50px;
     background-color: #ff5722;
     color: white;
     border: none;
@@ -104,5 +114,67 @@ body {
 
 #btn:hover {
     background-color: #e64a19;
+}
+
+.sec-container {
+    width: 400px;
+    height: 350px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sec-container div {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+#totamt {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.bttn button {
+    width: 300px;
+    padding: 15px;
+    background-color: #2874f0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    margin-left: 50px;
+    
+}
+
+.bttn button:hover {
+    background-color: #1565c0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    #container, .sec-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #imgcontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #image img {
+        width: 100px;
+        height: 100px;
+    }
 }
 
